@@ -47,9 +47,83 @@
 }
 
 .div-carrito .cant-carrito{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
     font-weight: bold;
+    background-color: red;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.listaProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardProduct{
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border-color: rgb(157, 151, 151);
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    border-style: solid;
+    margin: 15px;
+}
+
+.cardProduct .cardTitulo{
+    display: flex;
+    height: 50px;
+    background-color: rgb(195, 192, 198);
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+
+
+.cardProduct .cardImg{
+    display: flex;
+    height: 250px;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.cardProduct .cardDetails{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color:rgb(251, 251, 210);
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.bt-count{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 15px;
+}
+
+.div-count{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+/*    fontSize:"1.5rem", alignContent:"center", justifyContent:"center", textAlign:"center"*/
 }
 
 
@@ -63,3 +137,5 @@
         padding-top: 25px;
     }   
 }
+
+
