@@ -54,7 +54,7 @@ Clonar
 
 - git clone https://github.com/LorenaCardozo/KetoSur.git
 
-Instalar dependencias de desarrollo. Nota: Consulte el motor de package.json para ver nuestras versiones de nodos compatibles y probadas.
+Instalar dependencias de desarrollo. Nota: Consulte el package.json para ver las versiones compatibles.
 
 - npm install
 
