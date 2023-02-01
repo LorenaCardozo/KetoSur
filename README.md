@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Ecommerce - KetoSur
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](public/img/react.webp)
 
-## Available Scripts
 
-In the project directory, you can run:
+  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
-### `npm start`
+  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Descripción del Proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="justify">
+ Aplicación Ecommerce realizada en ReactJS.
 
-### `npm test`
+ ![Descripcion del proyecto](public/gif/Animation.gif)
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `Visualizar todos los productos:` Al ingresar a la aplicación se permite visualizar todos los productos disponibles para la compra.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `Filtrar por categoría:` Al navegar entre las opciones del menú se filtran los productos según la categoría de los mismos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `Agregar productos al carrito:` Se permite detallar el producto y agregarlos al carrito de compras.
 
-### `npm run eject`
+- `Visualizar carrito de compras:` Mediante el icono del carrito se puede ver el detalle de los productos añadidos y el total de la compra. También posible eliminar productos del carrito.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `Completar Orden de compra:` Al ingresar todos los datos requeridos del comprador se puede finalizar la compra almacenando la orden en Cloud Firestore.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Desarrollado con
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React js
+- React Router
+- React Hooks
+- Context
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Ferramentas utilizadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png" alt="firebase" width="40" height="40"/> </a>
 
-### Code Splitting
+<img src="https://camo.githubusercontent.com/ab4c3c731a174a63df861f7b118d6c8a6c52040a021a552628db877bd518fe84/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d2532333230323332612e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d253233363144414642"/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Características
+- Los datos se consultan a Cloud Firestore
+- El proyecto maneja una unica hoja de estilo css.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Instrucciones para clonar
 
-### Making a Progressive Web App
+Clonar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- git clone https://github.com/LorenaCardozo/KetoSur
 
-### Advanced Configuration
+Instalar dependencias de desarrollo. Nota: Consulte el motor de package.json para ver nuestras versiones de nodos compatibles y probadas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- npm install
 
-### Deployment
+Ejecutar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- npm start

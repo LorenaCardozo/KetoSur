@@ -2,44 +2,52 @@ import Card from "./Card";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import getProductList from '../Services/service'
+//import getProductList from '../Services/service'
+import { getProductList } from "../Services/firebase";
+ 
+import Loader from "./Loader";
 
 function ItemListContainer(props){
 
     const [productos, setProductos] = useState([]);
+    const [cargando, setCargando] = useState(true);
+    const [errores, setErrores] = useState();
 
     const { categoriaId } = useParams();
 
-    /*
-    const productos =[{id:1, nombre:'Budín marmolado', img: '/img/budin.png', precio:1500},
-                      {id:2,nombre:'Pan Burger Keto', img: '/img/pan.png', precio:1300}, 
-                      {id:3,nombre:'Box de galletitas', img: '/img/galletitas.png', precio:900},
-                      {id:4,nombre:'Conitos Keto', img: '/img/conitos.png', precio:1100},
-                      {id:5,nombre:'Tarta de Ricota', img: '/img/tarta.png', precio:2500},
-                    ]
-    */
-
     useEffect(()=>{
+
+    setCargando(true);
+
     getProductList(categoriaId)
     .then((respuesta) => {
         setProductos(respuesta);  
+        setCargando(false);
     })
-    .catch((error) => alert(error))
+    .catch((error) => setErrores(error))
+    .finally(()=> setCargando(false))
     }, [categoriaId])
 
     return(
+    <div className="contenedor">
+        {(cargando)?<Loader/>:
         
-        <>
-        <h2 style={{color:"grey", textAlign:"center", fontSize:"2rem" }}>{props.greeting}</h2>
-        <div className="listaProductos">
-            { 
-                productos.map((producto) => {
-                    return <Card key = {producto.id}  item = {producto}/>
-                })
-                    
-            }
-        </div>
-        </>
+        (errores?<div><span>No se pudo cargar la categoría.</span></div>:
+            <>
+            <h2 style={{color:"grey", textAlign:"center", fontSize:"2rem" }}>{props.greeting}</h2>
+            <div className="listaProductos">
+                { 
+                    productos.map((producto) => {
+                        return <Card key = {producto.id}  item = {producto}/>
+                    })
+                        
+                }
+            </div>
+            </>
+        )    
+    
+    }
+    </div>        
     );
 }
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function ItemCount(props) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   let stock = props.stock;
 
   function Agregar() {
@@ -14,11 +14,11 @@ function ItemCount(props) {
 
   return (
     <div className="div-count">
-      Cantidad
-      <button className="bt-count" disabled={count === 0} onClick={Restar}>-</button>
+      <p>Cantidad</p>
+      <button className="bt-count" disabled={count === 1} onClick={Restar}>-</button>
       <p>{count}</p>
       <button className="bt-count" disabled={count === stock} onClick={Agregar}>+</button>
-      <button className="bt-count">Agregar al carrito</button>
+      <button className="bt-count" onClick={()=>props.onClick(count) }>Agregar al carrito</button>
     </div>
   );
 }

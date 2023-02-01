@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function NavBar() {
@@ -8,11 +8,11 @@ function NavBar() {
         <div className="navbar">
             <Link to={'/'}><img src="/img/keto.png"/></Link> 
             <ul className="navbar-items">
-                <li className="navbar-link"><Link to={'/categoria/panaderia'}>Panadería</Link></li>
-                <li className="navbar-link"><a href="/categoria/postres">Postres</a></li>
-                <li className="navbar-link"><a href="/categoria/viandas">Viandas</a></li>
+                <li className="navbar-link"><NavLink to={'/categoria/panaderia'} activeclassname = "active">Panadería</NavLink></li>
+                <li className="navbar-link"><NavLink to={'/categoria/postres'} >Postres</NavLink></li>
+                <li className="navbar-link"><NavLink to={'/categoria/viandas'} >Viandas</NavLink></li>
             </ul>
-            <CartWidget/>
+            <Link to={'/cart'}><CartWidget/></Link>
         </div>
     )
 

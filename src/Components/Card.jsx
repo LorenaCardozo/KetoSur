@@ -8,7 +8,7 @@ function Card(props){
             <div className="cardImg"> <img src={props.item.img} alt="" /></div>
             <div className="cardDetails">
                 <span>Precio:$ {props.item.precio}</span>
-                <Link to={`/producto/${props.item.id}`}><button> Detalle</button></Link>
+                <Link to={`/producto/${props.item.id}`}><button className="bt-count"> Ver más</button></Link>
             </div>
 
         </div>

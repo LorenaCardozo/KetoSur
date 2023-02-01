@@ -1,5 +1,5 @@
 const productos =[
-{id:1, nombre:'Budín marmolado', categoria: 'panaderia', img: '/img/budin.png' , imgDetails: '/img/budin_details.png', stock:5, precio:1500},
+{id:1,nombre:'Budín marmolado', categoria: 'panaderia', img: '/img/budin.png' , imgDetails: '/img/budin_details.png', stock:5, precio:1500},
 {id:2,nombre:'Pan Burger Keto', categoria: 'panaderia', img: '/img/pan.png', imgDetails: '/img/pan_details.png',stock:10, precio:1300}, 
 {id:3,nombre:'Box de galletitas', categoria: 'panaderia', img: '/img/galletitas.png' , imgDetails: '/img/galletitas_details.png',stock:10, precio:900},
 {id:4,nombre:'Conitos Keto', categoria: 'panaderia', img: '/img/conitos.png' , imgDetails: '/img/conitos_details.png',stock:10, precio:1100},
@@ -30,7 +30,7 @@ const getProductList = (categoriaId) => {
         }
             
 
-      }, 1000);
+      }, 5000);
     });
   };
 
