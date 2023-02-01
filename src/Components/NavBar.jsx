@@ -6,7 +6,7 @@ function NavBar() {
 
     return(
         <div className="navbar">
-            <Link to={'/'}><img src="/img/keto.png"/></Link> 
+            <Link to={'/'}><img src="/img/keto.png" alt="logoKeto"/></Link> 
             <ul className="navbar-items">
                 <li className="navbar-link"><NavLink to={'/categoria/panaderia'} activeclassname = "active">Panadería</NavLink></li>
                 <li className="navbar-link"><NavLink to={'/categoria/postres'} >Postres</NavLink></li>

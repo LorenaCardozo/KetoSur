@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useContext } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { crearOrden } from "../Services/firebase";
 import { cartContext } from "../Storage/cartContext";
 import CartItem from "./CartItem";

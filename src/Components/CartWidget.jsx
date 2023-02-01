@@ -7,7 +7,7 @@ function CartWidget(){
 
     return(
         <div className="div-carrito">
-        <img className="carrito" src={`/img/cart.png`}/>
+        <img className="carrito" src={`/img/cart.png`} alt="foto producto"/>
         {contexto.cart.length > 0 &&<span className="cant-carrito">{contexto.cart.length}</span>
         }
         </div>

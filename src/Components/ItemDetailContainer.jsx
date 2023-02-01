@@ -65,7 +65,7 @@ function ItemDetailContainer(){
         <div className="div-detalle">
             <section className="section-detalle-img"> 
             <p>{producto.nombre}</p>    
-                <img height={650} src={producto.imgDetails}></img>
+                <img height={650} src={producto.imgDetails} alt="foto producto"></img>
                 <span>Precio: $ {producto.precio}</span>
                 {(!sumaAlCarrito )?<ItemCount onClick={handlerAgregarAlCarrito} stock={producto.stock}/>:<button className="bt-count" onClick={handlerVerCarrito}>Ir al Carrito</button>
                 }

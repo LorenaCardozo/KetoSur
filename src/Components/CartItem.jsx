@@ -14,7 +14,7 @@ function CartItem(props){
                 cart.map((item) =>  
                     (
                         <div className="cart-item" key={item.id}>
-                            <div className="cart-item-deta"><img  height={50} src={item.img} /></div>
+                            <div className="cart-item-deta"><img  height={50} src={item.img} alt="foto producto"/></div>
                             <div className="cart-item-deta">{item.nombre}</div>
                             <div className="cart-item-deta">${item.precio}</div>
                             <div className="cart-item-deta">Cantidad: {item.count}</div>
